@@ -1,5 +1,7 @@
+
 body{
     margin: 0;
+    padding: 0 48px;
 }
 header .container{
     display: flex;
@@ -23,15 +25,22 @@ header h1{
     font-family:'Source Serif 4', serif;
     color: #1B2128;
     font-weight: 600;
+    padding: 48px 0;
 }
 header nav ul li a{
     color: #1B2128;
     text-decoration: none;
     font-size: 28px;
-    font-family: "Roboto";
+    font-family:"Domine", serif;
 }
 .main{
     text-align: center;
+    font-size: 120px;
+    line-height: 120px;
+    font-family: "Domine", serif;
+    font-weight: 700;
+
+
 }
 .frist{
     width: 1344px;
@@ -39,8 +48,10 @@ header nav ul li a{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+
+
     
 
 }
@@ -48,4 +59,75 @@ header nav ul li a{
     display: grid;
     grid-template-columns:repeat(3,1fr);
     grid-gap: 10px;
+
+}
+.sub-discription{
+    color: #2E2A149E;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    line-height:24px;
+    font-size: 17px;
+}
+.discription{
+    color: #28261B;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    line-height:24px;
+    font-size: 20px;
+
+}
+
+.middle{
+    font-family: "Domine", serif;
+    text-align: center;
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 400;
+    padding: 96px 0;
+}
+.check{
+    font-family: "Domine", serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 68px;
+    font-size: 64px;
+
+}
+.seemore span{
+    background-color:#FFD700;
+    padding: 12px 28px;
+    border-radius: 16px;
+    color: #050400;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 20x;
+    line-height: 24px;
+
+
+
+}
+.seemore{
+    text-align: center;
+
+}
+.check-point{
+    color: #28261B;
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+.img-last{
+    height:756px ;
+    width: 1344px;
+    border-radius:20px;
+    border-top: 1.5px solid #000000;
+    margin-top: 50px;
+
+}
+.top{
+    padding: 96px 0;
+    gap: 50px;
 }
