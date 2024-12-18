@@ -1,30 +1,28 @@
 
 body{
     margin: 0;
-    padding:0 48px;
+    padding:0 5%;
 }
 header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #FAFCFF;
-    padding: 16px 0;
-    width: 1344;
-    height: 80px;
+    padding: 1vh 0;
+    width: 100%;
+    height: 6vh;
 
 }
 nav ul{
     display: flex;
-
-    
 }
 nav ul li{
-    display: flex;
-    margin: 0 10px;
+    list-style: none;
+    margin: 0 2%;
   
 }
 header h1{
-    font-size: 42px;
+    font-size: 3.5vw;
     font-family:'Source Serif 4', serif;
     color: #1B2128;
     font-weight: 600;
@@ -33,153 +31,265 @@ header h1{
 header nav ul li a{
     color: #1B2128;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 2vw;
     font-family:"Domine", serif;
+    
+}
+a:hover{
+    background-color: rgb(48, 61, 82);
+    color: white;
+    border-radius: .3vw;
+    padding: 0.5vw;
+    
 }
 .main{
     text-align: center;
-    font-size: 120px;
-    line-height: 120px;
+    font-size: 8vw;
+    line-height: 8vw;
     font-family: "Domine", serif;
     font-weight: 700;
+    color: #28261B;
 
 
 }
 .frist{
-    width: 1344px;
-    height: 672px;
+    width: 100%;
+    height: 80vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    margin: auto;
-    margin-top: 50px;
-
-
-    
-
+    margin-top:  5vh;
 }
 .image{
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    grid-gap: 10px;
-    margin-left: 45px;
-    margin-top: 50px;
+    grid-gap: 2%;
+    margin-left: 1%;
 
+}
+.image-height{
+    margin-top:-5%;
 }
 .sub-discription{
     color: #2E2A149E;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     line-height:2px;
-    font-size: 17px;
+    font-size: 1.4vw;
+}
+.sub-discription:hover{
+    color: rgb(108, 108, 225);
+    cursor: pointer;
 }
 .discription{
     color: #28261B;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     line-height:2px;
-    font-size: 20px;
+    font-size: 1.4vw;
 
 }
-
 .middle{
+    margin-top: 25vh;
+    text-align: center;
+}
+
+.middle p{
     font-family: "Domine", serif;
     text-align: center;
-    font-size: 48px;
-    line-height: 52px;
+    font-size:3.5vw;
+    line-height: 1vw;
     font-weight: 400;
-    padding: 96px 0;
     text-wrap: wrap;
-
+    color: #28261B;
 }
 .check{
     font-family: "Domine", serif;
     font-weight: 700;
     text-align: center;
-    line-height: 68px;
-    font-size: 64px;
+    margin-top: 12%;
+    font-size: 4vw;
+    color: #28261B;
 
 }
 .seemore span{
     background-color:#FFD700;
-    padding: 12px 28px;
-    border-radius: 16px;
+    padding: 1.3vh 2.5vw;
+    border-radius: 1.1vw;
     color: #050400;
     font-family: "Outfit", sans-serif;
     font-weight: 500;
-    font-size: 20x;
-    line-height: 24px;
-
-
-
+    font-size: 1.3vw;
+    line-height: 8vw;
 }
 .seemore{
     text-align: center;
+
+}
+.seemore span:hover{
+    background-color:rgb(216, 125, 14);
+    cursor: pointer;
 
 }
 .check-point{
     color: #28261B;
     font-family: "Outfit", sans-serif;
     text-align: center;
-    line-height: 32px;
-    font-size: 24px;
+    margin-top: -2%;
+    font-size: 1.8vw;
     font-weight: 400;
 
 }
 .img-last{
-    height:756px ;
-    width: 1344px;
-    border-radius:20px;
-    border-top: 1.5px solid #000000;
-    margin-top: 50px;
-    margin-left: 45px;
+    height:40vh ;
+    width: 100%;
+    border: radius 2vw;
+    margin-top: 2vh;
+    margin-left: 0.8%;
 
 }
 .top{
-    padding: 96px 0;
-    gap: 50px;
-    margin-top: 30px;
+    padding: 10vh 0;
+    gap: 5vw    ;
+    margin-top: 3vh;
 }
 .foot{
-    font-size: 28px;
+    font-size: 2.5vw;
     font-weight: 400;
     color: #2E2A149E;
     display:flex;
     justify-content: space-between;
+    margin-top: 23%;
 
 }
 .right-side{
     display: flex;
     justify-content: right;
-    height: 154px;
-    width: 647px;
-    margin-left: 700px;
+    height: 12vh;
+    width: 40%;
+    margin-left: 58%;
+    margin-top: 50vh;
 }
 .right-side p{
-    font-size: 24px;
+    font-size: 1.4vw;
     font-family:"Outfit", sans-serif;
     font-weight: 400;
-    line-height: 32px;
-    padding: 50px 0;
-    gap: 50px;
+    margin-top: 5vh;
+    padding: 5vh;
+    color: #28261B;
 
 }
 .foot .right{
     
     font-family:"Outfit", sans-serif;
-    padding: 12px 28px;
-    border:1.5px solid #6E684933;
-    border-radius: 16px;
+    padding: 1vh 1.5vw;
+    border:0.15vw solid #6E684933;
+    border-radius: 1vw;
     color: #28261B;
-    font-size: 20px;
+    font-size: 1.5vw;
+
+}
+.foot .right:hover{
+    background-color:rgb(48, 61, 82);
+    cursor: pointer;
+    color: white;
+    padding: 1.3vh 1.8vw;
+
 
 }
 .foot .left{
     font-family:"Domine", serif;
+    font-size:1.8vw ;
 }
 .image img{
-    margin-top: 50px;
+    margin-top: 5vh;
 }
 footer{
-    margin-top: 230px;
+    margin-top: 15vh;
 }
+/* @media screen (max-width:760px){
+    header .container{
+        flex-direction:row;
+        align-items: center;
+        padding: 3vh 0;
+    }
+    header h1{
+        font-size: 6vh;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+    nav ul li{
+        margin: 2vh 0;
+    }
+    .main{
+        font-size: 12vw;
+    }
+    .image{
+        grid-template-columns:repeat(3,1fr);
+        margin-left: 0;
+    
+    }
+    .middle{
+        font-size: 8vw;
+    }
+    .check{
+        font-size: 7vw;
+    }
+    .foot{
+        flex-direction: column;
+        text-align: center;
+    }
+    .right-side{
+        margin: 0;
+        justify-content: center;
+        padding: 3vh;
+
+    }
+    .foot .right,
+    .foot .left{
+        font-size: 2vw;
+    }
+    footer{
+        margin-top: 8vh;
+
+    }
+}
+@media screen (max-width:480px){
+    header h1{
+        font-size: 8vw;
+    }
+    nav ul li a{
+        font-size: 4vw;
+    }
+    .main{
+        font-size: 14vw;
+        text-align: center;
+    }
+    
+    .middle{
+        font-size: 10vw;
+    }
+    .check{
+        font-size: 8vw;
+    }
+    .seemore span{
+        font-size: 4vw;
+    }
+    .foot{
+        font-size: 3.5vw;
+    }
+    .right-side p{
+        font-size: 2.5vw;
+    }
+    .right-side {
+        margin-left: 0  ;
+        justify-content: center;
+    }
+    footer{
+        margin-top: 6vh;
+
+    }
+}
+ */
