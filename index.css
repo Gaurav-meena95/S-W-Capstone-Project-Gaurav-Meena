@@ -55,29 +55,36 @@ a:hover{
 .frist{
     width: 100%;
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     margin-top:  5vh;
 }
 .image{
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    grid-gap: 2%;
-    margin-left: 1%;
-    width: 100%;
-    height: auto;
+    gap:2rem;
+    margin: 2rem 0;
 
 }
 .image-height{
-    margin-top:-5%;
+    display: flex;
+    flex-direction: column;
+}
+.image-height img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+
+}
+..image-height img:hover{
+    transform: scale(1.05);
+
 }
 .sub-discription{
     color: #2E2A149E;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
-    line-height:2px;
-    font-size: 1.4vw;
+    font-size: 1.rem;
+    margin-top: 0.2rem;
 }
 .sub-discription:hover{
     color: rgb(108, 108, 225);
@@ -87,8 +94,8 @@ a:hover{
     color: #28261B;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
-    line-height:2px;
-    font-size: 1.4vw;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
 
 }
 .middle{
@@ -100,9 +107,7 @@ a:hover{
     font-family: "Domine", serif;
     text-align: center;
     font-size:3.5vw;
-    line-height: 1vw;
     font-weight: 400;
-    text-wrap: wrap;
     color: #28261B;
 }
 .check{
@@ -195,7 +200,6 @@ a:hover{
     background-color:rgb(48, 61, 82);
     cursor: pointer;
     color: white;
-    padding: 1.3vh 1.8vw;
 
 
 }
@@ -211,94 +215,114 @@ footer{
 }
 
 
-@media screen (max-width:760px){
-    header .container{
-        flex-direction:column;
-        align-items: center;
-        padding: 3vh 0;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and   (max-width:1024px){
     header h1{
-        font-size: 6vh;
+        font-size: 4vw;
     }
     nav ul {
         flex-direction: column;
-        margin-top: 2vh;
     }
-    nav ul li{
-        margin: 2vh 0;
+    .middle p{
+        font-size: 4vw;
+    }
+    .main{
+        font-size: 10vw;
+    }
+    .foot .right,.foot .left{
+        font-size: 2vw;
+    }
+    .image{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .image img{
+        margin-top: 3vh;
+    }
+}
+
+
+
+
+/* @media screen and  (max-width:768px){
+    header h1{
+        font-size: 6vw;
+    }
+    
+    nav ul li a{
+        font-size: 3vw;
+    }
+    .image{
+        grid-template-columns:repeat(2,1fr);
+        
+    }
+    .middle p{
+        font-size: 5vw;
     }
     .main{
         font-size: 12vw;
     }
-    .image{
-        grid-template-columns:repeat(2,1fr);
-        margin-left: 0;
-    
-    }
-    .middle{
-        font-size: 8vw;
-    }
-    .check{
-        font-size: 7vw;
+    .foot .right,.foot .left{
+        font-size: 3vw;
     }
     .foot{
         flex-direction: column;
-        text-align: center;
-    }
-    .right-side{
-        margin: 0;
-        justify-content: center;
-        padding: 3vh;
-
-    }
-    .foot .right,
-    .foot .left{
-        font-size: 2vw;
-    }
-    footer{
-        margin-top: 8vh;
-
-    }
-}
-@media screen (max-width:480px){
-    header h1{
-        font-size: 8vw;
-    }
-    nav ul li a{
-        font-size: 4vw;
-    }
-    .main{
-        font-size: 14vw;
-        text-align: center;
-    }
-    .image{
-        grid-template-columns:repeat(1,1fr);
-        margin-left: 0;
-    
-    }
-    
-    .middle{
-        font-size: 10vw;
-    }
-    .check{
-        font-size: 8vw;
-    }
-    .seemore span{
-        font-size: 4vw;
-    }
-    .foot{
-        font-size: 3.5vw;
+        text-align:center;
     }
     .right-side p{
-        font-size: 2.5vw;
+        font-size: 2vw;
+        padding: 3vh;
     }
-    .right-side {
-        margin-left: 0  ;
-        justify-content: center;
-    }
-    footer{
-        margin-top: 6vh;
+} */
 
-    }
-}
 
+
+
+
+
+
+
+
+
+    @media screen and (max-width:480px){
+        header h1{
+            font-size: 8vw;
+        }
+        
+        nav ul li a{
+            font-size: 4vw;
+        }
+        .image{
+            grid-template-columns: 1fr;
+            
+            
+        }
+        .middle p{
+            font-size: 6vw;
+        }
+        .main{
+            font-size: 14vw;
+        }
+        .foot .right,.foot .left{
+            font-size: 4vw;
+        }
+        footer{
+            margin-top: 10vh;
+        }
+        .right-side{
+            font-size: 3vw;
+            padding: 4vh;
+        }
+    }
+    
