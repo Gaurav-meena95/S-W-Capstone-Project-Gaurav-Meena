@@ -23,7 +23,6 @@ body{
     font-family: 'Source Serif 4', serif;
     width: 20vw;
     height: 2vw;
-    /* background-color: #FFD700; */
 }
 .nav-bar .nav-right{
     display: flex;
@@ -31,8 +30,14 @@ body{
     line-height: 0;
     margin-right: 50px;
     font-family: "Domine", serif;
-    /* background-color: antiquewhite; */
-
+    transition: 0.3s linear;
+}
+.nav-right a:hover{
+    transform: scale(1.05);
+    background-color: rgb(26, 60, 101);
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
 
 }
 .nav-bar a{
@@ -51,7 +56,7 @@ body{
     padding: 10vh 0;
     gap: 5vw    ;
     margin-top: 3vh;
-    /* background-color: red; */
+    
 }
 .heading{
     text-align: center;
@@ -91,6 +96,10 @@ body{
     width: 90%;
     height: 70%;
     border-radius: 8px;
+    transition: 0.2s linear;
+}
+.top img:hover{
+    transform: scale(1.02);
 
 }
 .image-container{
@@ -101,17 +110,23 @@ body{
     width: 100%;
     height: auto;
     align-items: center;
+    margin-top:-5%;
 }
 .colage-img{
-    width: 25vw;
+    width: 25%;
     height: 20%;
     margin: 2%;
-    /* background-color: blue; */
+    
 }
 .colage-img img{
     width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: 0.3s linear;
+}
+.colage-img img:hover{
+    transform: scale(1.05);
+    box-shadow: 0.2px 0.2px 30px rgb(174, 173, 173);
 }
 .content{
     margin: 0;
@@ -126,17 +141,20 @@ body{
     color: #28261B;
     font-weight: 400;
     font-size:20px;
-
+    
 }
 .sub-discription{
     color: #2E2A149E;
     font-weight: 400;
     font-size: 17px;
     margin-top: 0.2rem;
+    transition: 0.2s linear;
 }
 .sub-discription:hover{
     color: rgb(108, 108, 225);
     cursor: pointer;
+    transform: scale(1.02);
+
 }
 
 
@@ -183,23 +201,26 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 2%;
 }
 .seemore button{
     text-align: center;
     background-color: #FFD700;
-    width: 9vw;
-    height: 5vw;
+    width: 13%;
+    height: 4vw;
     border-radius: 16px;
     border: none;
     color: #050400;
     font-family: "Outfit", sans-serif;
-    font-size: 2vw;
-
+    font-size: 1.6vw;
+    transition: 0.2s linear;
 
 }
 .seemore button:hover{
-    background-color:rgb(216, 125, 14);
+    background-color:rgb(242, 195, 40);
     cursor: pointer;
+    transform: scale(1.05);
+
 
 }
 .check-point{
@@ -212,12 +233,15 @@ body{
 
 }
 .img-last img{
-    
     width: 100%;
     border: radius 2vw;
     margin-top: 2vh;
-    margin-left: 0.8%;
+    transition: 0.2s linear;
+    margin-top: 4%;
 
+}
+.img-last img:hover{
+    transform: scale(1.02);
 }
 
 .foot{
@@ -235,6 +259,7 @@ body{
     height: 12vh;
     width: 50%;
     margin-left: 50%;
+
 
 }
 .right-side p{
@@ -254,6 +279,7 @@ body{
     border-radius: 1vw;
     color: #28261B;
     font-size: 1.5vw;
+    margin-right: 2%;
 
 }
 .foot .right:hover{
@@ -266,6 +292,7 @@ body{
 .foot .left{
     font-family:"Domine", serif;
     font-size:1.8vw ;
+    margin-left: 2%;
 }
 .image img{
     margin-top: 5vh;
@@ -275,19 +302,70 @@ footer{
 }
 
 
-@media only screen and (max-width: 850px) {
-    .image-container {
-        width: 70vw;
+@media only screen and (max-width: 1024px) {
+    .colage-img {
+        width: 300px;
         margin: auto;
-        gap: 10px;
+    }
+    .discription{
+        font-size: 18px;
+
+    }
+    .sub-discription{
+        font-size: 15px;
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 768px) {
     .image-container {
-        width: 30vw;
-        margin: auto;
-        gap: 10px;
+        justify-content: center;
+
+    }
+    .colage-img{
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+    }
+    .top h1{
+        font-size: 7vw;
+    }
+    .nav-bar .nav-right{
+        display: none;
+    }
+    .nav-bar::after{
+        content:"☰";
+        font-size:24px ;
+        color: black;
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 50px;
+        background-color: #edead5;
+        border-radius: 3px;
+
+    }
+    .colage-img{
+        margin: 10px;
+        width: 50%;
+
+    }
+    .discription{
+        font-size: 14px;
+
+    }
+    .sub-discription{
+        font-size: 12px;
+    }
+    .nav-left{
+        font-family: 100px;
+    }
+    .seemore button{
+        width: 15%;
+        height: 6vw;
+        border-radius: 8px;
+        font-size: 1.5vw;
+        text-align: center;
+        border: none;
+
     }
 }
 
