@@ -98,13 +98,9 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    /* background-color: aqua; */
     width: 100%;
     height: auto;
     align-items: center;
-
-
-
 }
 .colage-img{
     width: 25vw;
@@ -192,12 +188,12 @@ body{
     text-align: center;
     background-color: #FFD700;
     width: 9vw;
-    height: 6vw;
+    height: 5vw;
     border-radius: 16px;
     border: none;
     color: #050400;
     font-family: "Outfit", sans-serif;
-    font-size: 20px;
+    font-size: 2vw;
 
 
 }
@@ -279,13 +275,23 @@ footer{
 }
 
 
-
-@media only screen and (max-width:1000px){
-    .colage-img{
-        width: 60vw;
-        height: 20%;
-        margin: 2%;
-
+@media only screen and (max-width: 850px) {
+    .image-container {
+        width: 70vw;
+        margin: auto;
+        gap: 10px;
     }
-    
 }
+
+@media only screen and (max-width: 650px) {
+    .image-container {
+        width: 30vw;
+        margin: auto;
+        gap: 10px;
+    }
+}
+
+
+
+
+
